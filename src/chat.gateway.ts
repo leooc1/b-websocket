@@ -21,7 +21,7 @@ interface Room {
   createdAt: Date;
 }
 
-@WebSocketGateway(3001, {
+@WebSocketGateway({
   cors: {
     origin: 'http://localhost:5173',
     methods: ['GET', 'POST'],
